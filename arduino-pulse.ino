@@ -38,7 +38,7 @@ void loop() {
     switch (switchtrigger) {   
       case 'm':
         while(digitalRead(11)==LOW){
-          
+          // dummy loop to wait until the first trigger
         }
         // ELP aquirement
         while (true) {
