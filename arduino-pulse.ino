@@ -37,11 +37,14 @@ void loop() {
 //    Serial.println(switchtrigger);
     switch (switchtrigger) {   
       case 'm':
+        while(digitalRead(11)==LOW){
+          
+        }
         // ELP aquirement
         while (true) {
           for (int i=1;i<data_size;i++){
             if (data[i]== '1'){
-                int ch=i+1;
+              int ch=i+1;
               while (digitalRead(11)==HIGH){
                 ledon(ch);
                 }
